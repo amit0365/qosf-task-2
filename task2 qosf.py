@@ -105,7 +105,7 @@ qf2= np.dot(q0heq0, CX)
 
 # task 2 part c
 
-# apply bit flip for q0e
+# apply bit flip for q0e as the unwanted bit is  |1>
 
 # apply cnot to q0e and q0
 q0eq0 = np.kron(q0e,q0)
@@ -125,7 +125,7 @@ p0 = np.array([
 q0ec= np.dot(p0, q0ebf)
 
 
-# apply phase flip for q0he
+# apply phase flip for q0he as the unwanted bit is   |0> - |1>
 # apply h to eq0
 q0heh = np.dot(H, q0he)
 
